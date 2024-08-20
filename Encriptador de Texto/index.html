@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="header_nav" src="./img/Logo.png" alt="">
+        </nav>
+    </header>
+    <main class="main">
+        <section class="sectionLeft">
+            <div class="clase1">
+                <textarea class="sectionLeft_textarea" name="" id="textoEntrada"
+                    oninput="validacionesEntrada(this);">Ingrese el texto aquí</textarea>
+            </div>
+            <div class="clase2">
+                <p class="imgWarning"><img src="./img/Vector.png" alt="">Solo letras minúsculas y sin acentos</p>
+                <button class="botonEncriptar" href="" onclick="encriptarTexto();">Encriptar</button>
+                <button class="botonDesencripta" href="" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="sectionRigth">
+            <textarea readonly class="sectionRigth_textarea" name="" id="textoSalida"></textarea>
+            <button id="copiarBtn" class="botonCopiar" onclick="copiarTexto();">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Manuel Telule Urra</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

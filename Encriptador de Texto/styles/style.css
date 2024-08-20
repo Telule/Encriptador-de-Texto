@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #495057;
+    --color-terciario: #ffffff;
+    --color-cuartero: #D8DFE8;
+    --color-quinto: #495057;
+
+    --font-primario: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #F3F5FC;
+}
+
+header {
+}
+
+.header_nav {
+    margin-top: 2rem;
+}
+
+body {
+    /* Se coloca esto para mandar footer al final*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 20px;
+    overflow: auto; /* Para manejar contenido adicional */
+    align-items: center;
+}    
+
+.sectionLeft {
+    display: flex;
+    flex-direction: column;
+    height: 944px;
+    justify-content: space-between;
+    flex: 2;
+    align-items: center;   
+}
+
+.sectionLeft_textarea {
+    width: 680px;
+    height: 288px;
+    font-family: var(--font-primario);
+    color: var(--color-primario);
+    width: 300;
+    font-size: 32px;
+    border-style: none;
+    margin-top: 10rem;
+}
+
+.sectionRigth {
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    width: 400px;
+    height: 944px;
+    background-color: var(--color-terciario);
+    align-items: center;
+}
+
+.sectionRigth_textarea {
+    border-style: none;
+    background-color: var(--color-terciario);
+    width: 336px;
+    height: 781px;
+    font-family: var(--font-primario);
+    font-size: 1.5rem;
+    color: var(--color-quinto);
+    margin: 2rem 2rem 0 2rem;
+    width: 400;
+}
+
+.clase2 {
+    margin-bottom: 2rem;
+
+}
+.footer {
+    background-color: var(--color-secundario);
+    text-align: center;
+    /* Se coloca esto para mandar footer al final*/
+    padding: 1em 0;
+    margin-top: auto;
+
+}
+
+.botonCopiar {
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    font-family: var(--font-primario);
+    color: var(--color-primario);
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-primario);
+    margin-bottom: 2rem;
+}
+
+.footer p {
+    background-color: var(--color-secundario);
+    font-family: var(--font-primario);
+    color: var(--color-terciario);
+    font-weight: 300;
+}
+
+
+
+.imgWarning {
+    font-family: var(--font-primario);
+    color: var(--color-secundario);
+    width: 400;
+    margin-bottom: 2rem;
+}
+
+.imgWarning img{
+    margin-right: 0.5rem;
+}
+
+.botonEncriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: none;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+.botonDesencripta {
+    width: 328px;
+    height: 67px;
+    border-radius: none;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+textarea:focus {
+    outline: none;
+    /* Puedes agregar estilos adicionales aquí para cuando el input esté enfocado */
+}
+
+.botonEncriptar:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.botonDesencripta:hover{
+    background-color: var(--color-cuartero);
+}
+
+.botonCopiar:hover{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+}
+
+@media (width: 768px) and (height: 1174px) {
+
+    .main {
+        flex-direction: column;
+    }    
+
+    .sectionLeft_textarea {
+        align-self: self-start;
+        width: 688px;
+        height: 288px;
+        font-family: var(--font-primario);
+        color: var(--color-primario);
+        font-size: 2rem;
+        border-style: none;
+        border: 10px greenyellow solid;
+        margin-top: 0;
+        margin-bottom: 10rem;
+   
+    }
+ 
+    .sectionRigth {
+        width: 688px;
+        height: 343px;
+        background-color: var(--color-terciario);
+        align-items: center;
+        border: 10px grey solid;
+    }
+
+    .botonCopiar {
+        width: 624px;
+        height: 67px;
+        border-radius: 24px;
+        font-family: var(--font-primario);
+        color: var(--color-primario);
+        background-color: var(--color-terciario);
+        border: 1px solid var(--color-primario);
+    }
+    
+
+}
